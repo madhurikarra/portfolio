@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tiny foot Steps</title>
+  <link rel="stylesheet" href="styling_cart.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td class="table1"><img src="https://thumbs.dreamstime.com/b/pink-watercolor-heart-baby-footprints-pregnancy-announcement-concept-illustration-gender-reveal-imitation-colored-girl-155678278.jpg" alt="tiny foot steps" height="120" width="120" />
+      </td>
+      <td class="table1">
+        <h1>Tiny Foot Steps</h1>
+        <p><em>Stepping stones to learning English</em></p>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <p><strong>About the author</strong></p>
+  <p>This section describes about the author and her endeavors to learn the English language. For anyone who's native language is not English, it takes humungous amounts of effort to become eloquent in it.
+    This website lists a collection of stories that demonstrate the usage of a myriad of words.</p>
+  <hr size="3" noshade>
+  <h3>Vocab and Writing Exercises</h3>
+  <ul>
+    <li>
+      <h4>Fairy tales Retold</h4>
+    </li>
+    <li>
+      <h4>Short Stories</h4>
+    </li>
+  </ul>
+  <hr>
+  <h3>1. Fairy Tales Retold</h3>
+  <table id="fairytale">
+    <thead>
+      <tr>
+        <th>Fairy Tale</th>
+        <th>The Story</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>The Little Mermaid</td>
+        <td>And the story goes here...</td>
+      </tr>
+      <tr>
+        <td>Sleeping Beauty</td>
+        <td>And here comes the story...</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>2. Short Stories</h3>
+  <table id="shortstory">
+      <tr>
+        <th>Story Title</th>
+        <th>Story Blurb</th>
+      </tr>
+      <tr>
+        <td>Love and War</td>
+        <td>As the saying goes, anything is fair in love and war. But what happens when you fall in love with someone your kingdom is at war with?</td>
+      </tr>
+      <tr>
+        <td>The White Pierre</td>
+        <td>An intelligence agency finds that a diamond smuggler is after a rare gemstone that is beleived to posses the power of the five elements of nature.
+          A widespread myth is that if the stone falls in wrong hands, it unleashes a wave of destruction. A group of agents embark on a journey to stop the smuggler before its too late.</td>
+      </tr>
+  </table>
+  <hr>
+  <h3>Story Rating</h3>
+  <table>
+    <tr>
+      <td>The Little Mermaid</td>
+      <td>🧡🧡🧡🤍🤍</td>
+      <td>Love and War</td>
+      <td>🧡🧡🧡🧡🤍</td>
+    </tr>
+    <tr>
+      <td>Sleeping Beauty</td>
+      <td>🧡🧡🤍🤍🤍</td>
+      <td>The White Pierre</td>
+      <td>🧡🧡🧡🧡🧡</td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Have a new story to add? Go ahead and unleash your creativity...</h3>
+  <table class="table1">
+      <tr>
+        <td class="table1"><label for="title1">Story Title: </label></td>
+        <td class="table1"><input type="text" id="story1" value="" size="50"></td>
+      </tr>
+      <tr>
+        <td class="table1"><label for="blurb">Enter your Summary here: </label></td>
+        <td class="table1"><textarea id="sum1" name="blurb1" rows="8" cols="80"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" name="" value="Submit your Story!" onclick="addStory()"></td>
+      </tr>
+  </table>
+</body>
+<script type="text/javascript">
+  function addStory() {
+    var table = document.getElementById("shortstory");
+      var row = table.insertRow(-1);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = document.getElementById("story1").value;
+      cell2.innerHTML = document.getElementById("sum1").value;
+  }
+</script>
+</html>
